@@ -17,7 +17,7 @@ function montyProblem(first_choice) {
   console.log("Available door: " + availableDoor);
   console.log("Reveal door: " + revealDoor);
 
-  $(`[data-door=${first_choice}]`).attr("src", "images/opened_empty_door.png"); 
+  $(`[data-door=${availableDoor}]`).attr("src", "images/opened_empty_door.png"); 
   $(".option").prop("disabled", true);
   $("#stick, #swap").prop("disabled", false);
   $(".text").text("You chose Door #" + first_choice + " Do you want to stick or swap?");
