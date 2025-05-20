@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monty Hall</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="header" >Monty Hall</h1>
+    <p class="text">Choose a Door</p>
+    <div class="container">
+        <div class="door"><input type="image" class="option" data-door="1" src="images/closed_door.png"></div>
+        <div class="door"><input type="image" class="option" data-door="2" src="images/closed_door.png"></div>
+        <div class="door"><input type="image" class="option" data-door="3" src="images/closed_door.png"></div>
+    </div>
+    <center>
+            <button class="btn" id="stick" disabled>Stick</button>
+            <button class="btn" id="swap" disabled>Swap</button>
+    </center>
+    <center>    
+        <button onclick="reset()" class = "btn" id="reset">Reset</button>
+    </center>
+</body>
+</html>
