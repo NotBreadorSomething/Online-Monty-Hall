@@ -10,9 +10,15 @@
     display: flex;
     justify-content: space-evenly;
 }
-
-.image{
+.door{
+  height: 35vw;
   
+}
+
+.option{
+  height: 100%;
+}
+.image{
   cursor: not-allowed;
 }
 .btn {
